@@ -1,1 +1,9 @@
-# Merged RDF data (Turtle format)
+@prefix trm: <urn:vertex:trm:> .
+@prefix grip: <urn:vertex:grip:> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<urn:vertex:trm:rule/TR-1> a trm:TaxRule ;
+  trm:appliesToJurisdiction "US-CA" .
+
+<urn:vertex:grip:update/100> a grip:RegulatoryUpdate ;
+  grip:impactsRule <urn:vertex:trm:rule/TR-1> .

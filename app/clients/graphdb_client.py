@@ -6,7 +6,10 @@ class GraphDBClient:
         response = requests.post(
             settings.GRAPHDB_REPO_URL,
             data={"query": query},
-            headers={"Accept": "application/sparql+json"},
+            headers={
+                "Accept": "application/sparql-results+json",
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
             timeout=10
         )
         response.raise_for_status()
