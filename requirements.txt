@@ -8,4 +8,5 @@ rdflib==7.1.1
 
 SQLAlchemy==2.0.35
 psycopg[binary]==3.3.3
+greenlet>=3.0.0
 python-dotenv==1.0.1
