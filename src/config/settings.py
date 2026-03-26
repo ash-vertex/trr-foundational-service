@@ -26,6 +26,7 @@ class Settings(BaseSettings):
     VCMS_DB_NAME: str
     VCMS_DB_USER: str
     VCMS_DB_PASSWORD: str
+    VCMS_DB_SSL: bool = False
 
     @computed_field
     @property
